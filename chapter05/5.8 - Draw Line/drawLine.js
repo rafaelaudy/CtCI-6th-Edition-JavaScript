@@ -1,12 +1,12 @@
+var findByte = function(x, y, width) {
+  var start = y * width / 8;
+  return start + Math.floor(x / 8);
+};
+
 var drawLine = function(screen, width, x1, x2, y) {
   var byte;
   var pixel;
 
-  var findByte = function(x, y, width) {
-    var start = y * width / 8;
-    return start + Math.floor(x / 8);
-  };
-  
   var findPixel = function(x) {
     return x % 8;
   };

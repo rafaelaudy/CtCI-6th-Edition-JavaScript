@@ -3,7 +3,7 @@ var LinkedList = function(value) {
   this.next = null;
 };
 
-var partition = function(head, partition) {
+var partitionFunc = function(head, partition) {
   // approach is to create left and right threads
   // and attach nodes with values less than partition value to the left
   // and nodes with vallues more than partition value to the right
@@ -77,5 +77,5 @@ d.next = e;
 e.next = f;
 f.next = g;
 
-var newa = partition(a, 5);
+var newa = partitionFunc(a, 5);
 printList(newa);

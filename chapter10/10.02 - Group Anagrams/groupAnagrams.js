@@ -40,7 +40,7 @@ const anagrams = [
   'theclassroom'
 ];
 
-const anagramsSorted = ["ninethumps", "punishments", "dormitory", "dirtyroom", "astronomer", "moonstarrer", "motherinlaw", "hitlerwoman", "thequeershakes", "schoolmaster", "theclassroom", "badcredit", "theearthquakes", "debit card"];
+const anagramsSorted = ['ninethumps', 'punishments', 'dormitory', 'dirtyroom', 'astronomer', 'moonstarrer', 'motherinlaw', 'hitlerwoman', 'thequeershakes', 'schoolmaster', 'theclassroom', 'badcredit', 'theearthquakes', 'debit card'];
 
 // groupAnagrams can be called
 console.log(groupAnagrams() === 'where is your anagram?');

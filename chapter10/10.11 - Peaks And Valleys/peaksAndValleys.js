@@ -17,7 +17,7 @@ function swap(array, i, j) {
 }
 
 function peaksAndValleys(array) {
-  if (!Array.isArray(array)) { return 'where is your array?';  }
+  if (!Array.isArray(array)) { return 'where is your array?'; }
   let isPeak = true;
   let curr;
   let right;

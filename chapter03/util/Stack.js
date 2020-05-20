@@ -31,7 +31,7 @@ class Stack {
   }
 
   peek() {
-    if (this.isEmpty()) return null;
+    if (this.isEmpty()) {return null;}
     return this._data[this.size() - 1];
   }
 

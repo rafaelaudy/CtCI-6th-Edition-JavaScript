@@ -2,7 +2,7 @@
 
 class Node {
   constructor(value) {
-      this.value = value
+      this.value = value;
       this.next = null;
   }
 }
@@ -36,14 +36,14 @@ class LinkedList {
       let cur = this.head;
 
       // only one or no item exists
-      if (!cur) return null;
+      if (!cur) {return null;}
       if (!cur.next) {
           this.head = null;
           return cur;
       }
       // move till the 2nd last
       while (cur.next.next)
-          cur = cur.next;
+          {cur = cur.next;}
       
       let last = this.tail;
       this.tail = cur;
@@ -57,7 +57,7 @@ class LinkedList {
           this.head = this.head.next;
           first.next = null;
       }
-      else this.head = null;
+      else {this.head = null;}
       return first;
   }
 
@@ -74,8 +74,8 @@ class LinkedList {
       if (i == index) {
         // remove
         if (prev == null)
-          this.head = cur.next;
-        else prev.next = cur.next;
+          {this.head = cur.next;}
+        else {prev.next = cur.next;}
         cur.next = null;
         return cur.value;
       }
@@ -89,7 +89,7 @@ class LinkedList {
   }
 
   insertAt(index, value) {
-      if (index == 0) return this.prepend(value);
+      if (index == 0) {return this.prepend(value);}
       let cur = this.head;
       let i = 0;
 

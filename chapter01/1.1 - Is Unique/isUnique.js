@@ -17,13 +17,19 @@ const everyCharUnique = (str, indexOffset = 'a'.charCodeAt()) => {
     for(let index of [...str].map(c => c.charCodeAt() - indexOffset)) {
         const mask = 1 << index;
         if(counterTable & mask)
-            return false;
+            {return false;}
         counterTable |= mask;
     }
     return true;
 };
 
 /* TESTS */
+console.log(allUniqueChars('abcd'), 'true');
+console.log(allUniqueChars('abccd'), 'false');
+console.log(allUniqueChars('bhjjb'), 'false');
+console.log(allUniqueChars('mdjq'), 'true');
+
+
 console.log(everyCharUnique('abcd'), 'true');
 console.log(everyCharUnique('abccd'), 'false');
 console.log(everyCharUnique('bhjjb'), 'false');

@@ -4,7 +4,7 @@ const sortedMerge = (a, b) => {
   } else {
     // naive solution: create new array and merge
     // create new array
-    let answer = [];
+    // let answer = [];
     // declare pointers for A and B
     let pointerA = 0;
     let pointerB = 0;

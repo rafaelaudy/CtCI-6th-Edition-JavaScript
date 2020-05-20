@@ -1,4 +1,4 @@
-var urlify = function(str, length) {
+var urlify = function(str) {
   // have a pointer to check from start to end
   var strArr = str.split('');
   var pointer = 0;

@@ -16,6 +16,7 @@ BookReader.prototype.open = function(bookname) {
   return this.currentBook.file;
 };
 
+// eslint-disable-next-line
 var Book = function(name, file) {
   this.name = name;
   this.file = file;

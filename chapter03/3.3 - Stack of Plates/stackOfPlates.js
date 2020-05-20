@@ -1,5 +1,5 @@
 // implement as array of stacks
-const Stack = require("../util/Stack");
+const Stack = require('../util/Stack');
 
 class SetOfStacks {
   constructor(capacity) {
@@ -13,7 +13,7 @@ class SetOfStacks {
 
   push(value) {
     let last = this.getLastStack();
-    if (this.stackSet.length === 0  || last.size() === this.capacity) {
+    if (this.stackSet.length === 0 || last.size() === this.capacity) {
       var newStack = new Stack();
       newStack.push(value);
       this.stackSet.push(newStack);
@@ -45,7 +45,7 @@ class SetOfStacks {
 
   popAt(index) {
     // out of range index
-    if (index < 0 || index >= this.stackSet.length) return false;
+    if (index < 0 || index >= this.stackSet.length) {return false;}
     let value = this.stackSet[index].pop();
     if (this.stackSet[index].size() == 0) {
       // clear the stack from the set

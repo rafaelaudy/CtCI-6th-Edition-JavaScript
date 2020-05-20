@@ -1,5 +1,5 @@
-const LinkedList = require("../util/LinkedListX");
-const printList = require("../util/printList");
+const LinkedList = require('../util/LinkedListX');
+const printList = require('../util/printList');
 
 let deleteMidNode = function(node) {
 

@@ -32,7 +32,7 @@ Folder.prototype.findFile = function(name) {
 var File = function(name, content) {
   this.type = 'file';
   this.name = name;
-  this.content =  content !== undefined ? content : null;
+  this.content = content !== undefined ? content : null;
 };
 
 var FileSystem = function(name) {

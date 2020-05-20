@@ -1,5 +1,5 @@
 function palinPerm(s) {
-  const sanitized = s.toUpperCase().split(" ").join("");
+  const sanitized = s.toUpperCase().split(' ').join('');
   const freq = new Map();
   for (let i = 0; i < sanitized.length; i++) {
     const char = sanitized.charAt(i);

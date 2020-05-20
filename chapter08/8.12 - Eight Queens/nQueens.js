@@ -53,11 +53,11 @@ var nqueens = function(n) {
     if (currRow === n) {
       answers.push(currentBoard);
     }
-    for (var i = 0; i < n; i++) {
-      if (center.charAt(i) === '0' && leftDiag.charAt(i) === '0' && rightDiag.charAt(i) === '0') {
-        currentBoard[i] = currRow;
-        recurse(currentBoard, changeChar(center, i, '1'), leftShift(changeChar(leftDiag, i, '1'), n), rightShift(changeChar(rightDiag, i, '1'), n), currRow + 1);
-        currentBoard[i] = -1; // untoggle board to save on space complexity for arrays per recursive step
+    for (var x = 0; x < n; x++) {
+      if (center.charAt(x) === '0' && leftDiag.charAt(x) === '0' && rightDiag.charAt(x) === '0') {
+        currentBoard[x] = currRow;
+        recurse(currentBoard, changeChar(center, x, '1'), leftShift(changeChar(leftDiag, x, '1'), n), rightShift(changeChar(rightDiag, x, '1'), n), currRow + 1);
+        currentBoard[x] = -1; // untoggle board to save on space complexity for arrays per recursive step
       }
     }
   };
